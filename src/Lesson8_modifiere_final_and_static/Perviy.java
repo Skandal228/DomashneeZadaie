@@ -21,8 +21,8 @@ public class Perviy {
 }
 class PerviyTest {
     public static void main(String[] args) {
-        Perviy pev1 = new Perviy();
-        pev1.delenie(5,2);
+
+        Perviy.delenie(5,2);
         System.out.println(Perviy.umnojenie(10,20,30));
 
     }
