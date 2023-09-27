@@ -2,7 +2,7 @@ package Lesson8_modifiere_final_and_static;
 
 public class Urovnenie {
     final static double PI = 3.14;
-    static double r =5.0;
+    static double r = 5.0;
 
     public  double ploshad (double r1){
         double s = PI * r1 * r1;

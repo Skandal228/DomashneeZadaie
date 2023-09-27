@@ -12,7 +12,7 @@ public class Student {
     }
 
     public static void sravnenie(Student st1, Student st2) {
-        if (st1.equals(st2)) {
+        if (st1.name.equals(st2) && st1.age == st2.age && st1.count == st2.count) {
             System.out.println("Студенты равны");
         } else {
             System.out.println("Cтуденты не равны");
@@ -20,28 +20,38 @@ public class Student {
     }
 
     public static void sravnenieAtributov(Student st1, Student st2) {
-        if (st1.name == st2.name) {
-            System.out.println("Имена схожи");
-        } else if (st1.count == st2.count) {
-            System.out.println("Курс студентов не совпадает");
-        } else if (st1.age == st2.age) {
-            System.out.println("Возраст студентов  совпадает");
-        } else {
-            System.out.println("Студенты полностью совпадают");
-        }
+        if (st1.name.equals(st2.name)) {
+
+            if (st1.age == st2.age) {
+
+                if (st1.count == st2.count) {
+                    System.out.println("Имена, курсы, оценки одинаковые");
+                } else {
+                    System.out.println("Имена и курс одинаковые, возраст различаются");
+                }
+
+            } else {
+                System.out.println("Возраст одинаков, курсы и имена разные ");
+            }
+        }else {
+            System.out.println("Все разное");}
+
 
     }
 }
-class StudentTest {
-    public static void main(String[] args) {
-        Student st1 = new Student("Valera", 1, 18);
-        Student st2 = new Student("Venera", 2, 18);
 
-            Student.sravnenie(st1,st2);
-            Student.sravnenieAtributov(st1,st2);
+    class StudentTest {
+        public static void main(String[] args) {
+            Student st1 = new Student("Valera", 1, 18);
+            Student st2 = new Student("Petr", 2, 18);
+
+            Student.sravnenie(st1, st2);
+            Student.sravnenieAtributov(st1, st2);
 
 
         }
     }
+
+
 
 
