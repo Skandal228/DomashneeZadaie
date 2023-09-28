@@ -1,4 +1,4 @@
-package Test_paketa_7;
+package Test_paketov;
 
 public class Test1 {
     int a =1;

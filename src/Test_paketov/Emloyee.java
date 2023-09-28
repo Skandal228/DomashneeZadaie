@@ -1,4 +1,4 @@
-package Test_paketa_7;
+package Test_paketov;
 
 class Employee {
     public static void main(String[] args) {
